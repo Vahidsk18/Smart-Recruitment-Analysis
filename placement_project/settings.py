@@ -129,3 +129,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Session settings for persistent login
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 SESSION_COOKIE_AGE = 1209600
+
+
+
+# Email settings (use Gmail for testing)
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "vskqis@gmail.com"       # replace with your Gmail
+EMAIL_HOST_PASSWORD = "qrxb spqg gomf xkry"      # use Gmail App Password, NOT your normal password
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
